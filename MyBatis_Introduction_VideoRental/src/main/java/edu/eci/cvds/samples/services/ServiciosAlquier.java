@@ -8,7 +8,7 @@ import java.sql.Date;
 import java.util.List;
 
 public interface ServiciosAlquier {
-    
+
     public abstract int valorMultaRetrasoxDia(int itemId);
 
     public abstract Cliente consultarCliente(long docu) throws ExcepcionServiciosAlquiler;
@@ -30,7 +30,7 @@ public interface ServiciosAlquier {
      * @obj consultar los items que estan disponibles para alquiler
      * @return el listado de items disponibles
      */
-    public abstract List<Item> consultarItemsDisponibles();
+    public abstract List<Item> consultarItemsDisponibles() throws ExcepcionServiciosAlquiler;
 
     /**
      * @obj consultar el valor de la multa del alquiler, dado el id del item
@@ -78,6 +78,8 @@ public interface ServiciosAlquier {
     public abstract void actualizarTarifaItem(int id, long tarifa) throws ExcepcionServiciosAlquiler;
 
     public abstract void registrarItem(Item i) throws ExcepcionServiciosAlquiler;
+
+    void registrarTipoItem(TipoItem tipoItem) throws ExcepcionServiciosAlquiler;
 
     public abstract void vetarCliente(long docu, boolean estado) throws ExcepcionServiciosAlquiler;
 }
