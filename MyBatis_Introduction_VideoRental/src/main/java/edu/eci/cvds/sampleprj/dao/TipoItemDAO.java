@@ -10,4 +10,5 @@ public interface TipoItemDAO {
     public void save(TipoItem it) throws PersistenceException, edu.eci.cvds.sampleprj.dao.PersistenceException;
     public TipoItem load (int id) throws PersistenceException, edu.eci.cvds.sampleprj.dao.PersistenceException;
     public List<TipoItem> consultarTiposItem() throws PersistenceException, edu.eci.cvds.sampleprj.dao.PersistenceException;
+
 }

@@ -4,6 +4,8 @@ import edu.eci.cvds.samples.entities.Cliente;
 import edu.eci.cvds.samples.entities.Item;
 import edu.eci.cvds.samples.entities.ItemRentado;
 import edu.eci.cvds.samples.entities.TipoItem;
+import edu.eci.cvds.samples.services.exeptions.ExcepcionServiciosAlquiler;
+
 import java.sql.Date;
 import java.util.List;
 
@@ -81,5 +83,5 @@ public interface ServiciosAlquier {
 
     void registrarTipoItem(TipoItem tipoItem) throws ExcepcionServiciosAlquiler;
 
-    public abstract void vetarCliente(long docu, boolean estado) throws ExcepcionServiciosAlquiler;
+    public abstract void vetarCliente(long docu, boolean estado) throws ExcepcionServiciosAlquiler, ExcepcionServiciosAlquilerr;
 }

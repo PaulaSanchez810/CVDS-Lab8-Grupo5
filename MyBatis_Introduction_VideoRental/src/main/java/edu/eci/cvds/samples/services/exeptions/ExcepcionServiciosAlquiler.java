@@ -1,8 +1,8 @@
-package edu.eci.cvds.samples.services;
+package edu.eci.cvds.samples.services.exeptions;
 
 import edu.eci.cvds.sampleprj.dao.PersistenceException;
 
 public class ExcepcionServiciosAlquiler extends  Exception{
-    public ExcepcionServiciosAlquiler(String string, PersistenceException e) {super(string, e);}
+    public ExcepcionServiciosAlquiler(String string, PersistenceException ex) {super(string, ex);}
     public ExcepcionServiciosAlquiler(String string){super(string);}
 }

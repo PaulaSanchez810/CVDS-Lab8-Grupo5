@@ -8,6 +8,8 @@ public interface ItemDAO {
 
     public void save(Item it) throws PersistenceException, edu.eci.cvds.sampleprj.dao.PersistenceException;
     public Item load(int id) throws PersistenceException, edu.eci.cvds.sampleprj.dao.PersistenceException;
+    public void saveTarifaItem(int itemId,long nuevaTarifa) throws PersistenceException;
     List<Item> consultarItemsDisponibles()throws edu.eci.cvds.sampleprj.dao.PersistenceException;
+
 
 }

@@ -33,6 +33,11 @@ public class MyBATISItemDAO implements ItemDAO{
 
 
     }
+    ///
+    @Override
+    public void saveTarifaItem(int itemId, long nuevaTarifa) throws org.apache.ibatis.exceptions.PersistenceException {
+
+    }
 
     @Override
     public List<Item> consultarItemsDisponibles() throws PersistenceException {
