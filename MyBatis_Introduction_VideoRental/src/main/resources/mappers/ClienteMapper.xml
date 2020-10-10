@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper">
+<mapper namespace="edu.eci.cvds.sampleprj.dao.ClienteMapper">
     <select parameterType="map" id="consultarClientes" resultMap="ClienteResult">
         select
 
@@ -86,6 +86,6 @@
         <id property="id" column="id"/>
         <result property="fechainiciorenta" column="fechainiciorenta"/>
         <result property="fechafinrenta" column="fechafinrenta"/>
-        <association property="item" javaType="Item" resultMap='edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper.ItemResult' columnPrefix="item_"></association>
+        <association property="item" javaType="Item" resultMap='edu.eci.cvds.sampleprj.dao.ItemMapper.ItemResult' columnPrefix="item_"></association>
     </resultMap>
 </mapper>

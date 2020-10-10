@@ -172,7 +172,7 @@ En este laboratorio se utilizará un 'framework' de persistencia. La base de dat
 
 	```xml	
 	<resultMap type='ItemRentado' id="ItemRentadoResult">            
-		<association ... resultMap='edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper.ItemResult'></association> 
+		<association ... resultMap='ItemMapper.ItemResult'></association> 
 	</resultMap>
 	```
 	
